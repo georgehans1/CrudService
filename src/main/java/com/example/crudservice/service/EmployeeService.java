@@ -19,7 +19,7 @@ public class EmployeeService {
 
     public HttpStatus createEmployee(EmployeeRequest employee){
         log.info("{}",employee);
-        employeeRepository.save(Employee.builder().name(employee.getName()).employeeRole(employee.getEmployeeRole()).employeeID(employee.getEmployeeID()).projectLead(employee.getProjectLead()).build());
+        employeeRepository.save(Employee.builder().name(employee.getName()).employeeRole(employee.getEmployeeRole()).employeeID(employee.getEmployeeID()).projectLead(employee.getProjectLead()).cohort(employee.getCohort()).build());
         return HttpStatus.CREATED;
     }
 

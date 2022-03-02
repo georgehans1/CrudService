@@ -17,13 +17,14 @@ public class Employee {
     private String name;
     private String employeeRole;
     private String projectLead;
+    public  Cohort cohort;
 
-
-    public Employee(String id, String employeeID, String name, String employeeRole, String projectLead) {
+    public Employee(String id, String employeeID, String name, String employeeRole, String projectLead, Cohort cohort) {
         this.id = id;
         this.employeeID = employeeID;
         this.name = name;
         this.employeeRole = employeeRole;
         this.projectLead = projectLead;
+        this.cohort = cohort;
     }
 }
